@@ -1,0 +1,135 @@
+body {
+  background-color: #dada;
+  font-family: "Libre Baskerville";
+  margin: 0px;
+  padding: 0px;
+}
+.grid {
+  display: grid;
+  border: 1px dashed black;
+  min-height: 85vh;
+  background-image: url("../img/rayures.png");
+}
+$even: rgb(51, 89, 149);
+$odd: rgb(32, 68, 126);
+.cell {
+  border: 1px dashed black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+.cell:nth-child(even) {
+  background-color: $even;
+}
+.cell:nth-child(odd) {
+  background-color: $odd;
+}
+
+h1 {
+  small {
+    font-size: 1.2rem;
+    color: gray;
+  }
+}
+
+form {
+  background-color: orange;
+  top: 0px;
+  right: 0px;
+  position: fixed;
+  min-height: 100vh;
+  right: 0px;
+  top: 0px;
+  width: 25%;
+  .group {
+    border-bottom: 1px solid black;
+    padding: 10px;
+  }
+  transition: all 0.25s;
+  transform: translateX(100%);
+  &.opened {
+    transform: translateX(0%);
+  }
+}
+.info {
+  background-color: #dadada;
+  font-size: 0.8rem;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.form-btn {
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  font-style: italic;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.form-header {
+  text-align: center;
+}
+.form-title {
+  border: 1px dashed white;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+header#MainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.settings {
+  img {
+    width: auto;
+    height: 25px;
+  }
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+#Help {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  .bubble {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.btn-cell {
+  background-color: silver;
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+  border-radius: 2px;
+  &:hover {
+    cursor: pointer;
+  }
+  img {
+    max-width: 100%;
+  }
+}
