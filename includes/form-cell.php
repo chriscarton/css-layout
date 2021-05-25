@@ -7,7 +7,7 @@
         </a>
     </header>
 
-    <div class="group">
+    <div class="group" style="display:none;">
         <b>Cell ID</b>
         <div>
             <input

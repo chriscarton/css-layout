@@ -4,5 +4,5 @@
     <a class="btn-cell" id="btn-cell-<?= $i ?>">
         <img src="assets/img/settings.png"/>
     </a>
-    cell <?= $i ?>
+    <span><?= $i ?></span>
 </div>

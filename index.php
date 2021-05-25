@@ -14,13 +14,20 @@ require_once('includes/form-cell.php');
 ?>
 
     <header id="MainHeader">
-        <h1>Ingrid! <small>Un outil pour mieux comprendre CSS Grid</small></h1>
+        <div id="Brand">
+            <img src="assets/img/logo-ingrid.png" style="mix-blend-mode: multiply;"/>
+            <h1>Ingrid! <small>Un outil pour mieux comprendre CSS Grid</small></h1>
+
+        </div>
         <a class="settings">
             <img src="assets/img/settings.png"/>
         </a>
     </header>
     
     <?php include('includes/grid.php'); ?>
+
+    <?php include('includes/subcontrols.php'); ?>
+
 
     <div id="Help">
         
@@ -34,5 +41,6 @@ require_once('includes/form-cell.php');
     
     <script src="assets/js/grid.js"></script>
     <script src="assets/js/cell.js"></script>
+    <script src="assets/js/subcontrols.js"></script>
 </body>
 </html>
