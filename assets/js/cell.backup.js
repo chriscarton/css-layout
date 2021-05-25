@@ -3,16 +3,16 @@ cellFunctions();
 function cellFunctions() {
   let formCell = document.querySelector("#formCell");
 
-  document.querySelectorAll(".btn-cell").forEach(btnCell => {
-    btnCell.addEventListener("click", e => {
-      e.stopPropagation();
+  //Parcours des boutons de réglage des cellules.
+  document.querySelectorAll(".btn-cell").forEach(item => {
+    item.addEventListener("click", e => {
       formCell.reset();
 
-      //Champ caché du formulaire
       let cell_id = document.querySelector(".cell-id");
-      cell_id.value = btnCell.parentNode.id;
+      cell_id.value = item.parentNode.classList[1];
 
-      cell = document.getElementById(cell_id.value);
+      let cell = null;
+      cell = document.querySelector("." + cell_id.value);
       console.log(cell);
 
       //ouverture du panneau latéral
@@ -50,7 +50,6 @@ function cellFunctions() {
       submitCellBackgroundColor.addEventListener("click", function (e) {
         e.preventDefault();
         let value = cellBackgroundColorField.value;
-        console.log(cell);
         cell.style.backgroundColor = value;
       });
     });

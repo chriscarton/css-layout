@@ -6,8 +6,19 @@
             <?php include('assets/icons/close.svg');?>
         </a>
     </header>
+
     <div class="group">
-        <b>cell:grid-column</b>
+        <b>Cell ID</b>
+        <div>
+            <input
+                type="text"
+                class="cell-id"
+            >
+        </div>
+    </div>
+
+    <div class="group">
+        <b>Grid Column</b>
         <div>
             <input 
                 type="text"
@@ -17,11 +28,11 @@
             <button class="form-btn" id="submitGridColumn">ok!</button>
         </div>
         <div class="info">
-            Une info.
+            Nombre de colonnes occupées sur la grille.
         </div>
     </div>
     <div class="group">
-        <b>cell:grid-row</b>
+        <b>Grid Row</b>
         <div>
             <input 
                 type="text"
@@ -31,7 +42,24 @@
             <button class="form-btn" id="submitGridRow">ok!</button>
         </div>
         <div class="info">
-            Une info.
+            Nombre de lignes occupées sur la grille.
+        </div>
+    </div>
+
+    align-self
+    justify-self
+
+    <div class="group">
+        <b>Background Color</b>
+        <div>
+            <input 
+                type="color"
+                class="background-color"
+            >
+            <button class="form-btn" id="submitCellBackgroundColor">ok!</button>
+        </div>
+        <div class="info">
+            Couleur de fond.
         </div>
     </div>
     

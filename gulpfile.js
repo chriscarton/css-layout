@@ -28,7 +28,8 @@ function browser() {
     browserSync.init({
         proxy: 'localhost/css-layout',
         files: [
-            './**/*.php'
+            './**/*.php',
+            './*.php'
         ]
     });
 
