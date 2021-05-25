@@ -70,3 +70,14 @@ btnSettings.addEventListener('click',function(e){
     }
 });
 
+//close 
+let close = document.querySelector('.close-form-grid');
+close.addEventListener('click',function(e){
+    e.preventDefault();
+
+    if(form.classList.contains('opened')){
+        form.classList.remove('opened');
+    }else{
+        form.classList.add('opened');
+    }
+});

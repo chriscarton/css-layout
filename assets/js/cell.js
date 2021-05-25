@@ -45,3 +45,16 @@ document.querySelectorAll('.btn-cell').forEach(item => {
 
     })
   });
+
+
+  //close 
+let close2 = document.querySelector('.close-form-cell');
+close2.addEventListener('click',function(e){
+    e.preventDefault();
+
+    if(formCell.classList.contains('opened')){
+        formCell.classList.remove('opened');
+    }else{
+        formCell.classList.add('opened');
+    }
+});

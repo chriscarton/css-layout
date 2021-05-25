@@ -1,6 +1,10 @@
 <form id="formCell">
+
     <header class="form-header">
         <h1 class="form-title">Cell</h1>
+        <a class="close close-form-cell">
+            <?php include('assets/icons/close.svg');?>
+        </a>
     </header>
     <div class="group">
         <b>cell:grid-column</b>

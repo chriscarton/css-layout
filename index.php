@@ -9,11 +9,8 @@
 </head>
 <body>
 <?php 
-
 require_once('includes/form-grid.php');
 require_once('includes/form-cell.php');
-
-
 ?>
 
     <header id="MainHeader">
@@ -25,8 +22,6 @@ require_once('includes/form-cell.php');
     
     <?php include('includes/grid.php'); ?>
 
-    
-    
     <div id="Help">
         
         <div class="bubble">
