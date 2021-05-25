@@ -19,7 +19,7 @@ require_once('includes/form-cell.php');
     <header id="MainHeader">
         <h1>Ingrid! <small>Un outil pour mieux comprendre CSS Grid</small></h1>
         <a class="settings">
-            <img src="img/settings.png"/>
+            <img src="assets/img/settings.png"/>
         </a>
     </header>
     
@@ -32,7 +32,7 @@ require_once('includes/form-cell.php');
         <div class="bubble">
             <h2>Inspecter la grille</h2>
             <p>Avec l'inspecteur de chrome, aller dans l'arborescence et cliquer sur "grid"</p>
-            <img src="img/inspecteur.jpg"/>
+            <img src="assets/img/inspecteur.jpg"/>
         </div>
         
     </div>
